@@ -1,5 +1,6 @@
 package models.weapons
 
+import controllers.interfaces.CombatCharacter
 import controllers.interfaces.Weapon
 import models.Enemy
 import models.ItemType
@@ -15,7 +16,7 @@ class Dagger: Weapon {
         this.bonusDamage = bonusDamage
         this.description = description
     }
-    override fun attack(enemy: Enemy) {
+    override fun attack(combatCharacter: CombatCharacter) {
         TODO("Not yet implemented")
     }
 
